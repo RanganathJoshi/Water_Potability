@@ -1,0 +1,23 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  source: "https://github.com/RanganathJoshi/Water_Potability/raw/main/water_potability.zip"
+  unzip: artifacts/data_ingestion
+  raw_data: artifacts/data_ingestion/water_potability.zip
+  train_data: artifacts/data_ingestion/train.csv
+  valid_data: artifacts/data_ingestion/valid.csv
+  test_data: artifacts/data_ingestion/test.csv
+
+
+data_transformation:
+  root_path: artifacts/data_transformation
+  train_data_transform: artifacts/data_transformation/train.csv
+  vaid_data_transform: artifacts/data_transformation/valid.csv
+  processor_obj_path: artifacts/data_transformation/processor.pkl
+
+
+model_trainer:
+  root_path: artifacts/model_trainer
+  model_path: artifacts/model_trainer/model.pkl
+
+

@@ -1,0 +1,62 @@
+parameters:
+  knn:
+    n_neighbors: [41, 46]
+    leaf_size: [41, 46]
+
+  Decision Tree:
+    criterion:
+      - gini
+      - entropy
+    splitter:
+      - best
+      - random
+    max_depth:
+      - 26
+      - null
+
+  SVC:
+    C:
+      - 0.1
+      - 15
+    kernel:
+      - poly
+      - rbf
+
+  RandomForest:
+    n_estimators:
+      - 150
+      - 200
+    max_depth:
+      - 50
+
+  Adaboost:
+    n_estimators:
+      - 200
+    learning_rate:
+      - 0.001
+
+  GradientBoost:
+    learning_rate:
+      - 0.1
+    subsample:
+      - 0.6
+      - 0.7
+    n_estimators:
+      - 128
+      - 256
+
+  BaggingClassifierknn:
+    n_estimators:
+      - 200
+    max_features:
+      - 0.8
+    max_samples:
+      - 0.9
+
+  BaggingClassifierSVC:
+    n_estimators:
+      - 200
+    max_features:
+      - 0.8
+    max_samples:
+      - 0.9
