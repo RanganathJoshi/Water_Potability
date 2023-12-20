@@ -1,0 +1,59 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="ph">ph:</label>
+        <input type="text" id="ph" name="ph" placeholder="Enter ph value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="Hardness">Hardness:</label>
+        <input type="text" id="Hardness" name="Hardness" placeholder="Enter Hardness value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="Solids">Solids:</label>
+        <input type="text" id="Solids" name="Solids" placeholder="Enter Solids value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Chloramines">Chloramines:</label>
+        <input type="text" id="Chloramines" name="Chloramines" placeholder="Enter Chloramines value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Sulfate">y:</label>
+        <input type="text" id="Sulfate" name="Sulfate" placeholder="Enter Sulfate value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="Conductivity">Conductivity:</label>
+        <input type="text" id="Conductivity" name="Conductivity" placeholder="Enter Conductivity value (float)">
+    </div>     
+
+    <div class="form-group">
+        <label for="Organic_carbon">Organic_carbon:</label>
+        <input type="text" id="Organic_carbon" name="Organic_carbon" placeholder="Enter Organic_carbon value (float)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Trihalomethanes">Trihalomethanes:</label>
+        <input type="text" id="Trihalomethanes" name="Trihalomethanes" placeholder="Enter Trihalomethanes value (float)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Turbidity">Turbidity:</label>
+        <input type="text" id="Turbidity" name="Turbidity" placeholder="Enter Turbidity value (float)">
+    </div> 
+
+    <div class="form-group">
+        <label for="Potability">Potability:</label>
+        <input type="text" id="Potability" name="Potability" placeholder="Enter Potability value (float)">
+    </div>
+  
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
