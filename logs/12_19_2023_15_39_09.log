@@ -1,0 +1,11 @@
+[2023-12-19 15:39:10,524] 25 root - INFO - DataIngestion workflow started
+[2023-12-19 15:39:10,527] 32 root - INFO - Data downloaded from source and extracted it
+[2023-12-19 15:39:10,536] 36 root - INFO - Splitting the data into train and test data and storing it in artifacts folder
+[2023-12-19 15:39:10,538] 39 root - INFO - train test split completed
+[2023-12-19 15:39:10,601] 49 root - INFO - Datasets loaded for transformations
+[2023-12-19 15:39:10,602] 28 root - INFO - Starting Data Transformation
+[2023-12-19 15:39:10,602] 31 root - INFO - Pipeline Initiated
+[2023-12-19 15:39:10,613] 43 root - INFO - Model training Initiated
+[2023-12-19 15:42:54,498] 67 root - INFO - Models trained and reports generated
+[2023-12-19 15:42:56,017] 78 root - INFO - Model Summary :{'knn': 0.5691056910569106, 'Adaboost': 0.6097560975609756, 'GradientBoost': 0.6280487804878049, 'SVC': 0.6016260162601627, 'Decision Tree': 0.5711382113821138, 'RandomForest': 0.6524390243902439, 'BaggingClassifierknn': 0.5975609756097561, 'BaggingClassifierSVC': 0.6016260162601627}
+[2023-12-19 15:42:56,017] 79 root - INFO - Best Model Found , Model Name : RandomForest , R2 Score : 0.6524390243902439

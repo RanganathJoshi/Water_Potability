@@ -1,0 +1,7 @@
+README.md
+setup.py
+WaterPotabilityClassification.egg-info/PKG-INFO
+WaterPotabilityClassification.egg-info/SOURCES.txt
+WaterPotabilityClassification.egg-info/dependency_links.txt
+WaterPotabilityClassification.egg-info/top_level.txt
+src/__init__.py

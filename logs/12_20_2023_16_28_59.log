@@ -1,0 +1,18 @@
+[2023-12-20 16:28:59,906] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-12-20 16:28:59,906] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2023-12-20 16:29:04,534] 96 werkzeug - INFO - 127.0.0.1 - - [20/Dec/2023 16:29:04] "GET /predict HTTP/1.1" 200 -
+[2023-12-20 16:29:14,262] 825 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "D:\ANACONDA\envs\water\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ANACONDA\envs\water\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ANACONDA\envs\water\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ANACONDA\envs\water\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 15, in predict_datapoint
+    data=customData(
+TypeError: __init__() got an unexpected keyword argument 'Potability'
+[2023-12-20 16:29:14,265] 96 werkzeug - INFO - 127.0.0.1 - - [20/Dec/2023 16:29:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
